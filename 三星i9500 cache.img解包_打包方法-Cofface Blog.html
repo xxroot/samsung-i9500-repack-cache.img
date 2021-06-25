@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://blog.cofface.com/archives/252.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>三星i9500 cache.img解包/打包方法-Cofface Blog</title>
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Cofface Blog » 三星i9500 cache.img解包/打包方法评论Feed" href="https://blog.cofface.com/archives/252.html/feed">
+<link rel="stylesheet" id="cptch_stylesheet-css" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/front_end_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cptch_desktop_style-css" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/desktop_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-lightbox-fancybox-css" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/jquery.fancybox-1.3.4.css" type="text/css" media="all">
+<link rel="stylesheet" id="main-css" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/style.css" type="text/css" media="all">
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/jquery.fancybox-1.3.4.js.下载"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var rlArgs = {"script":"fancybox","selector":"lightbox","customEvents":"","activeGalleries":"1","modal":"0","showOverlay":"1","showCloseButton":"1","enableEscapeButton":"1","hideOnOverlayClick":"1","hideOnContentClick":"0","cyclic":"0","showNavArrows":"1","autoScale":"1","scrolling":"yes","centerOnScroll":"1","opacity":"1","overlayOpacity":"70","overlayColor":"#666","titleShow":"1","titlePosition":"outside","transitions":"fade","easings":"swing","speeds":"300","changeSpeed":"300","changeFade":"100","padding":"5","margin":"5","videoWidth":"1080","videoHeight":"720"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/front.js.下载"></script>
+<link rel="https://api.w.org/" href="https://blog.cofface.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.cofface.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.cofface.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="MTK手机线刷通用教程（适合MTK65xx的CPU机型）" href="https://blog.cofface.com/archives/224.html">
+<link rel="next" title="WordPress更换域名后链接出错解决方法(SQL语句)" href="https://blog.cofface.com/archives/285.html">
+<link rel="canonical" href="https://blog.cofface.com/archives/252.html">
+<link rel="alternate" type="application/json+oembed" href="https://blog.cofface.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.cofface.com%2Farchives%2F252.html">
+<link rel="alternate" type="text/xml+oembed" href="https://blog.cofface.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.cofface.com%2Farchives%2F252.html&amp;format=xml">
+<style>a:hover, a:focus,.post-like.actived,.excerpt h2 a:hover,.user-welcome strong,.article-title a:hover,#comments b,.text-muted a:hover,.relates a:hover,.archives .item:hover h3,.linkcat h2,.sticky a:hover,.article-content a:hover,.nav li.current-menu-item > a, .nav li.current-menu-parent > a, .nav li.current_page_item > a, .nav li.current-posa,.article-meta a:hover,.excerpt h2 a span,.article-title a span,.archives-list a span,.most-comment-posts li > a span,.widget_postlist .items-01 .text span{color:#16C0F8;}.logo a,.article-tags a,.search-form .btn,#bdcs .bdcs-search-form-submit,.widget_tags_inner a:hover:hover,.focusmo a:hover h4,.tagslist .tagname:hover,.pagination ul > li.next-page > a,.comments-pagination .current{background-color:#16C0F8;}.label-important,.badge-important{background-color:#16C0F8;}.label-important .label-arrow,.badge-important .label-arrow{border-left-color:#16C0F8;}.title strong{border-bottom-color:#16C0F8;}#submit{background: #16C0F8;border-right: 2px solid #16C0F8;border-bottom: 2px solid #16C0F8;}@media (max-width:720px){.ui-navtop .logo, .logo{background-color:#16C0F8;}.nav li.current-menu-item > a:after, .nav li.current-menu-parent > a:after, .nav li.current_page_item > a:after, .nav li.current-post-ancestor > a:after{background-color:#16C0F8;}}</style>
+<meta name="keywords" content="rom开发, 技术分享, ">
+<meta name="description" content="Cofface Blog-三星i9500 cache.img解包/打包方法">
+<link rel="shortcut icon" href="https://blog.cofface.com/favicon.ico">
+<!--[if lt IE 9]><script src="https://blog.cofface.com/wp-content/themes/xiu/js/html5.js"></script><![endif]-->
+<script src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/share.js.下载"></script><link href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/share.css" rel="styleSheet" type="text/css"></head>
+<body class="post-template-default single single-post postid-252 single-format-standard post_p_indent m-home-most sticky-m totop-m comment_vcode ui-c2" style="">
+<section class="container">
+<header class="header">
+	<div class="logo"><a href="https://blog.cofface.com/" title="Cofface Blog-国内Android（安卓）第三方Rom/Recovery/Root开发"><img class="logo-img-pc" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/logo.png" alt="Cofface Blog"><img class="logo-img-m" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/logo.png" alt="Cofface Blog">Cofface Blog</a></div>	<ul class="nav"><li class="navmore"><i class="glyphicon glyphicon-align-justify"></i></li><li id="menu-item-1299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1299"><a href="https://blog.cofface.com/"><i class="fa fa-home"></i> 首页</a></li>
+<li id="menu-item-1309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1309"><a href="https://blog.cofface.com/about_cofface"><i class="fa fa-at"></i> 联系方式</a></li>
+<li id="menu-item-2016" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2016"><a href="https://blog.cofface.com/archives/category/downloadrecovery">Recovery分享</a></li>
+<li id="menu-item-2015" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2015"><a href="https://blog.cofface.com/archives/category/downloadrom">ROM分享</a></li>
+<li id="menu-item-1301" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1301"><a href="https://blog.cofface.com/archives/category/technology"><i class="fa fa-laptop"></i> 技术分享</a></li>
+<li id="menu-item-1304" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1304"><a href="https://blog.cofface.com/archives/category/tool"><i class="fa fa-th-large"></i> Cofface工具</a></li>
+</ul>	<form method="get" class="search-form" action="https://blog.cofface.com/"><input class="form-control" name="s" type="text" placeholder="输入关键字" required="required" value=""><input class="btn" type="submit" value="搜索"></form>	<span class="glyphicon glyphicon-search m-search"></span>	<div class="feeds">
+					<a class="feed feed-weibo" rel="external nofollow" href="http://weibo.com/cofface" target="_blank"><i></i>微博</a>
+					<a class="feed feed-facebook" rel="external nofollow" href="https://github.com/cofface" target="_blank"><i></i>Github</a>
+					<a class="feed feed-weixin" rel="external nofollow" href="javascript:;" title="" data-content="&lt;img src=&#39;https://blog.cofface.com/wp-content/uploads/2016/09/wechat_cofface_20210312.jpg&#39;&gt;" data-original-title="联系合作：微信扫一下，加博主好友"><i></i>微信<span class="feed-weixin-hide"><img src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/wechat_cofface_20210312.jpg"></span></a>
+			</div>
+	<div class="slinks">
+			</div>
+
+	</header>
+<div class="content-wrap">
+	<div class="content">
+						<header class="article-header">
+						<div class="breadcrumbs"><span class="text-muted">当前位置：</span><a href="https://blog.cofface.com/">Cofface Blog</a> <small>&gt;</small> <a href="https://blog.cofface.com/archives/category/technology">技术分享</a> <small>&gt;</small> <span class="text-muted">正文</span></div>
+						<h1 class="article-title"><a href="https://blog.cofface.com/archives/252.html">三星i9500 cache.img解包/打包方法</a></h1>
+			<ul class="article-meta">
+								<li>
+					<a href="https://blog.cofface.com/archives/author/cofface">cofface</a> 
+					发布于 2013-06-02				</li>
+				<li>分类：<a href="https://blog.cofface.com/archives/category/technology" rel="category tag" data-original-title="" title="">技术分享</a></li>								<li><span class="post-views">阅读(78911)</span></li>								<li></li>			</ul>
+		</header>
+				<article class="article-content">
+			<p><span style="font-size: 12px; font-family: arial, helvetica, sans-serif; color: #000000;"><span id="more-252"></span></span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">三星I9500官方在system.img做了手脚，以前的打包方法会导致无法刷入，国外xda-developers开发者Chainfire已经破解了此限制。</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">同时感谢<a href="http://weibo.com/server">@xiaolu</a>。</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">下面分享i9500的cache.img打包和解包方法;</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">第一步，你需要安装linux环境，建议安装ubuntu10.10版本，比较稳定和tar后方便三星机型刷入，高于此版本打包tar格式可能导致刷机失败；</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">第二步，安装好ubuntu10.10系统后建议开启root用户，开启方法可以百度或谷歌下；</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">第三步，按照下面命令进行打包和解包：</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">下载解包和打包所需工具，然后如下步骤进行操作即可，打包工具下载：<a style="color: #000000;" href="http://pan.baidu.com/share/link?shareid=477267&amp;uk=288670244">i9500_unpack_repack_tools_cofface</a></span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">1. &nbsp; <span style="color: #ff0000;">cd work_rom</span>/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //进入cache.img目录，我的是将cache.img放到work_rom目录下</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">2. <span style="color: #ff0000;">&nbsp;./simg2img cache.img cache_tmp.img</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//转换cache.img格式</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">3. &nbsp;<span style="color: #ff0000;">mkdir /mnt/rom</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //mnt目录下创建rom目录</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">4. &nbsp;<span style="color: #ff0000;">mount -o loop cache_tmp.img /mnt/rom</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//挂载cache_tmp.img到/mnt/rom目录下，此时你可以进去/mnt/rom目录进行修改cache目录下的文件</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">5. &nbsp;<span style="color: #ff0000;">./mkuserimg.sh -s /mnt/rom /root/work_rom/new_cache.img ext4 ./temp 2072m</span> &nbsp; &nbsp; //重新打包</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">6. <span style="color: #ff0000;">&nbsp;umount /mnt/rom</span> &nbsp; &nbsp; //卸载mnt/rom挂载</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">7. &nbsp; <span style="color: #ff0000;">rm cache.img</span> &nbsp; &nbsp; &nbsp; //删除旧的cache.img文件</span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">7. &nbsp; &nbsp;<span style="color: #ff0000;"> &nbsp;./sgs4ext4fs&nbsp;–bloat new_cache.img&nbsp;cache.img</span></span><br>
+<span style="font-size: 12px; color: #000000; font-family: arial, helvetica, sans-serif;">步骤示意图如下：</span><br>
+<span style="font-size: 12px; font-family: arial, helvetica, sans-serif; color: #000000;"><a style="color: #000000;" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/1.jpg" data-rel="lightbox-0" title=""><img class="wp-image-253 alignleft" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/1.jpg" alt="1" width="200" height="200" data-tag="bdshare"></a></span><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<span style="font-size: 12px; font-family: arial, helvetica, sans-serif; color: #000000;"><a style="color: #000000;" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/2.jpg" data-rel="lightbox-1" title=""><img class="wp-image-255 alignleft" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/2.jpg" alt="2" width="200" height="200" data-tag="bdshare"></a></span><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<p>&nbsp;<br>
+<span style="font-size: 12px; font-family: arial, helvetica, sans-serif; color: #000000;"><a style="color: #000000;" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/3.jpg" data-rel="lightbox-2" title=""><img class="wp-image-257 alignleft" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/3.jpg" alt="3" width="200" height="200" data-tag="bdshare"></a></span><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<p>
+&nbsp;<br>
+<span style="font-size: 12px; font-family: arial, helvetica, sans-serif; color: #000000;"><a style="color: #000000;" href="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/4.jpg" data-rel="lightbox-3" title=""><img class="wp-image-259 alignleft" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/4.jpg" alt="4" width="200" height="200" data-tag="bdshare"></a></span><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+						        	<p class="post-copyright">转载请注明来源：<a href="https://blog.cofface.com/">Cofface Blog</a> » <a href="https://blog.cofface.com/archives/252.html">三星i9500 cache.img解包/打包方法</a></p>		</article>
+				<div class="article-social">
+			<a href="javascript:;" class="action action-like" data-pid="252" data-event="like"><i class="glyphicon glyphicon-thumbs-up"></i>赞 (<span>0</span>)</a>				            <a href="javascript:;" class="action action-rewards" data-event="rewards"><i class="glyphicon glyphicon-usd"></i>打赏</a>
+	        					</div>
+
+		<div class="share-single"><div class="action-share bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1624613174493">
+分享到：
+<a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+<a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+<a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+<a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+<a class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+<a class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a>
+<a class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+<a class="bds_more" data-cmd="more">更多</a>
+(<a class="bds_count" data-cmd="count" title="累计分享0次">0</a>)
+</div>
+<script>
+window._bd_share_config = {
+    common: {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "0"
+    },
+    share: [{
+        bdCustomStyle: "https://blog.cofface.com/wp-content/themes/xiu/css/share.css"
+    }]
+}
+with(document) 0[(getElementsByTagName("head")[0] || body).appendChild(createElement("script")).src = "/static/api/js/share.js?cdnversion=" + ~(-new Date() / 36e5)];
+</script></div>		
+		<div class="article-tags">
+			标签：<a href="https://blog.cofface.com/archives/tag/rom%e5%bc%80%e5%8f%91" rel="tag" data-original-title="" title="">rom开发</a>		</div>
+
+		
+		<nav class="article-nav">
+			<span class="article-nav-prev"><span>上一篇</span><a href="https://blog.cofface.com/archives/224.html" rel="prev">MTK手机线刷通用教程（适合MTK65xx的CPU机型）</a></span>
+			<span class="article-nav-next"><span>下一篇</span><a href="https://blog.cofface.com/archives/285.html" rel="next">WordPress更换域名后链接出错解决方法(SQL语句)</a></span>
+		</nav>
+
+						<div class="sticky"><h3 class="title"><strong>热门文章</strong></h3><ul><li class="item"><a target="_blank" href="https://blog.cofface.com/superuser.html"><img data-original="https://blog.cofface.com/wp-content/uploads/2017/04/superuser1-150x150.png" class="thumb" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/superuser1-150x150.png">[cofface]Superuser授权管理V1.0.0.1</a></li><li class="item"><a target="_blank" href="https://blog.cofface.com/archives/2365.html"><img data-original="https://blog.cofface.com/wp-content/uploads/2017/03/coffaceTool1202-150x150.jpg" class="thumb" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/coffaceTool1202-150x150.jpg">[cofface]coffaceTool 工具 V1.2.1版</a></li><li class="item"><a target="_blank" href="https://blog.cofface.com/archives/741.html"><span><img src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/1-200x150.png" data-original="https://blog.cofface.com/wp-content/uploads/2014/04/1-200x150.png" class="thumb"></span>支持windows下打包boot/recovery.img的bootimg.exe，且支持自动解包/打包dt.img,加入MTK机型支持(20150624更新)</a></li><li class="item"><a target="_blank" href="https://blog.cofface.com/archives/569.html"><span><img src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/adb_v7.1.jpg" data-original="https://blog.cofface.com/wp-content/uploads/2013/10/adb_v7.1.jpg" class="thumb"></span>[cofface]adb/fastboot基于最新源码支持识别所有机型v9.0版（20190528更新）</a></li></ul></div>					</div>
+</div>
+<footer class="footer">
+	    版权所有 © 2013-2021 <a href="https://blog.cofface.com/about_cofface">COFFACE</a>&nbsp;  <a href="https://blog.cofface.com/about_cofface">联系方式</a>&nbsp;     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260463346'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260463346%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1260463346"><a href="https://www.cnzz.com/stat/website.php?web_id=1260463346" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/pic.gif"></a></span><script src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/z_stat.php" type="text/javascript"></script><script src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/core.php" charset="utf-8" type="text/javascript"></script></footer>
+</section>
+
+	<div class="rewards-popover-mask" data-event="rewards-close"></div>
+	<div class="rewards-popover">
+		<h3>感谢您的支持，我会继续努力的!</h3>
+				<div class="rewards-popover-item">
+			<h4>支付宝扫一扫打赏</h4>
+			<img src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/zfb-1.png">
+		</div>
+						<div class="rewards-popover-item">
+			<h4>微信扫一扫打赏</h4>
+			<img src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/wxpay.jpg">
+		</div>
+				<span class="rewards-popover-close" data-event="rewards-close"><i class="glyphicon glyphicon-remove"></i></span>
+	</div>
+
+<script>
+	window.TBUI={"uri":"https:\/\/blog.cofface.com\/wp-content\/themes\/xiu","roll":"1 2","ajaxpager":"0"}
+</script>
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/bootstrap.js.下载"></script>
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/swiper.min.js.下载"></script>
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/custom.js.下载"></script><div class="rollto"><a href="javascript:;"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
+<script type="text/javascript" src="./三星i9500 cache.img解包_打包方法-Cofface Blog_files/wp-embed.min.js.下载"></script>
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
